@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     this.usuariosService.obtenerUsuarios().subscribe( res => {
       console.log("Respuesta del servicio ", res);
     }, (error) => {
-      alert("ERROR EN PETICION");
+      alert("ERROR ATRAPADO DESDE MI COMPONENTE");
     });
   }
 

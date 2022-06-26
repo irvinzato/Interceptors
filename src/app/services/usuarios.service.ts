@@ -16,13 +16,8 @@ export class UsuariosService {
     let params = new HttpParams().append('page','1');
     params = params.append('nombre', 'Irving Rivera');
 
-    const headers = new HttpHeaders({
-      'token-usuario': 'ALGUNTOKEN12FSDAFD'
-    });
-
-    return this.http.get('https://reqres.in/api/usera', {
-      params,
-      headers
+    return this.http.get('https://reqres.in/api213/usera', {
+      params
     }).pipe( //AL PASAR EL PIPE Y DESPUES EL MAP, TRANSFORMO LA RESPUESTA A LO QUE YO QUIERO OBTENER, O PUEDO DEJAR LA RESPUESTA TAL CUAL
       map( (resp) => { 
         return resp;
@@ -35,7 +30,6 @@ export class UsuariosService {
       })
     );
   }
-
 
   manejarError( error: HttpErrorResponse ) {
     console.log("Sucedio un error ", error);
