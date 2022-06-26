@@ -20,7 +20,7 @@ export class UsuariosService {
       'token-usuario': 'ALGUNTOKEN12FSDAFD'
     });
 
-    return this.http.get('https://reqres.in/apiasdsa/usera', {
+    return this.http.get('https://reqres.in/api/usera', {
       params,
       headers
     }).pipe( //AL PASAR EL PIPE Y DESPUES EL MAP, TRANSFORMO LA RESPUESTA A LO QUE YO QUIERO OBTENER, O PUEDO DEJAR LA RESPUESTA TAL CUAL
